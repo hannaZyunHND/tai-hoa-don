@@ -1,0 +1,130 @@
+:root {
+  --bg: #f4f7fb;
+  --card: #ffffff;
+  --text: #152033;
+  --muted: #5b6b82;
+  --line: #d7e0ec;
+  --primary: #0b3d91;
+  --ok: #1f8f3a;
+  --bad: #b42318;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  width: 340px;
+  margin: 0;
+  padding: 14px;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  color: var(--text);
+  background: linear-gradient(180deg, #eaf1fb 0%, var(--bg) 40%, #eef3f8 100%);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.sub {
+  margin: 4px 0 12px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 12px;
+  margin-bottom: 10px;
+}
+
+.row.between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.label {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  margin: 0 0 6px;
+}
+
+.meta {
+  margin: 6px 0 0;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.4;
+  word-break: break-word;
+}
+
+input, select {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px 10px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  font-size: 13px;
+  background: #fff;
+}
+
+.btn {
+  width: 100%;
+  border: 0;
+  border-radius: 8px;
+  padding: 9px 12px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn.primary {
+  background: var(--primary);
+  color: #fff;
+}
+
+.btn.primary:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.btn.ghost {
+  margin-top: 8px;
+  background: #eef3fa;
+  color: var(--primary);
+}
+
+.badge {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 999px;
+}
+
+.badge.ok {
+  background: #e8f7ec;
+  color: var(--ok);
+}
+
+.badge.bad {
+  background: #fdecec;
+  color: var(--bad);
+}
+
+.progress-wrap {
+  height: 8px;
+  background: #e7eef8;
+  border-radius: 999px;
+  overflow: hidden;
+  margin-top: 8px;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #0b3d91, #2f6fed);
+  transition: width 0.2s ease;
+}

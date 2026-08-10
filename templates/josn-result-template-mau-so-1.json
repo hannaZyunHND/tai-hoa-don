@@ -1,0 +1,262 @@
+{
+    "nbmst": "0100235654",
+    "khmshdon": 1,
+    "khhdon": "C26TAA",
+    "shdon": 97047,
+    "cqt": "0101",
+    "cttkhac": [],
+    "dvtte": "VND",
+    "hdon": "01",
+    "hsgcma": "bb79893f-54cc-4008-b384-50cb8246246c",
+    "hsgoc": "bc3c0bc7-7fe4-46b4-8c68-c9a20a724b02",
+    "hthdon": 1,
+    "htttoan": 9,
+    "id": "27a1ecc8-f43e-4b60-9ce7-8ba5f2af85ee",
+    "idtbao": null,
+    "khdon": null,
+    "khhdgoc": null,
+    "khmshdgoc": null,
+    "lhdgoc": null,
+    "mhdon": "008D81202B87DC43B2915D9E24909E8E34",
+    "mtdiep": null,
+    "mtdtchieu": "V0100727825BCBF3DA8359849E886B4265657C54001",
+    "nbdchi": "Số 21/8 Phố Lý Nam Đế, Phường Hoàn Kiếm, Thành phố Hà Nội",
+    "chma": null,
+    "chten": null,
+    "nbhdktngay": null,
+    "nbhdktso": null,
+    "nbhdso": null,
+    "nblddnbo": null,
+    "nbptvchuyen": null,
+    "nbstkhoan": "0021000380646",
+    "nbten": "Công ty TNHH Thương mại Hoàng Lê",
+    "nbtnhang": "Ngân hàng TMCP Ngoại Thương Việt Nam - CN Hà Nội",
+    "nbtnvchuyen": null,
+    "nbttkhac": [
+        {
+            "ttruong": "UnitCode",
+            "kdlieu": "string",
+            "dlieu": "CTY"
+        },
+        {
+            "ttruong": "KindOfInvoice",
+            "kdlieu": "string",
+            "dlieu": "1"
+        },
+        {
+            "ttruong": "VoucherDate",
+            "kdlieu": "string",
+            "dlieu": "2026-07-21T14:20:50"
+        },
+        {
+            "ttruong": "InvoiceDate",
+            "kdlieu": "string",
+            "dlieu": "2026-07-21"
+        },
+        {
+            "ttruong": "NumberExternal1",
+            "kdlieu": "numeric",
+            "dlieu": "0"
+        },
+        {
+            "ttruong": "NumberExternal2",
+            "kdlieu": "numeric",
+            "dlieu": "0"
+        },
+        {
+            "ttruong": "NumberExternal3",
+            "kdlieu": "numeric",
+            "dlieu": "0"
+        }
+    ],
+    "ncma": "2026-07-21T07:21:42.348Z",
+    "ncnhat": "2026-07-21T07:21:42.357Z",
+    "ngcnhat": "tvan_pmqldoanhnghiep",
+    "nky": "2026-07-21T07:20:50Z",
+    "nmdchi": "Đường Vạn Hạnh, Khu Đô thị mới Ninh Khánh, Phường Hoa Lư, Tỉnh Ninh Bình",
+    "nmmst": "2700827166",
+    "nmstkhoan": null,
+    "nmten": "CÔNG TY TNHH IQ SCHOOL",
+    "nmtnhang": null,
+    "nmtnmua": null,
+    "nmttkhac": [
+        {
+            "ttruong": "Reference",
+            "kdlieu": "string",
+            "dlieu": "0"
+        }
+    ],
+    "ntao": "2026-07-21T07:21:42.281Z",
+    "ntnhan": "2026-07-21T07:21:42.215Z",
+    "pban": "2.1.0",
+    "ptgui": 1,
+    "shdgoc": null,
+    "tchat": 1,
+    "tdlap": "2026-07-20T17:00:00Z",
+    "tgia": 1,
+    "tgtcthue": 4630000,
+    "tgtthue": 0,
+    "tgtttbchu": "Bốn triệu, sáu trăm ba mươi nghìn đồng chẵn",
+    "tgtttbso": 4630000,
+    "thdon": "Hóa đơn điện tử giá trị gia tăng",
+    "thlap": 202607,
+    "thttlphi": [],
+    "thttltsuat": [
+        {
+            "tsuat": "KKKNT",
+            "thtien": 4630000,
+            "tthue": 0,
+            "gttsuat": null
+        }
+    ],
+    "tlhdon": "Hóa đơn điện tử giá trị gia tăng",
+    "ttcktmai": 0,
+    "tthai": 1,
+    "ttkhac": [
+        {
+            "ttruong": "KeySearch",
+            "kdlieu": "string",
+            "dlieu": "AQAAAOuNbRTT7pFmAN0gcHoTqobgUAZr3RGh8BrbKuApjA+vsQ5y8+b0s2I=000417"
+        },
+        {
+            "ttruong": "InvoiceType",
+            "kdlieu": "string",
+            "dlieu": "1"
+        },
+        {
+            "ttruong": "AdjustmentType",
+            "kdlieu": "string",
+            "dlieu": "0"
+        },
+        {
+            "ttruong": "VoucherType",
+            "kdlieu": "string",
+            "dlieu": "1"
+        }
+    ],
+    "tttbao": 1,
+    "ttttkhac": [
+        {
+            "ttruong": "TaxExternal",
+            "kdlieu": "string",
+            "dlieu": "-2$0$0$0$0"
+        }
+    ],
+    "ttxly": 5,
+    "tvandnkntt": "0100727825",
+    "mhso": null,
+    "ladhddt": 1,
+    "mkhang": "KM10222",
+    "nbsdthoai": "+84 24 3843 9258",
+    "nbdctdtu": "anh.ta@kiwifood.net",
+    "nbfax": null,
+    "nbwebsite": null,
+    "nbcks": "{\"Subject\":\"OID.0.9.2342.19200300.100.1.1=MST:0100235654, CN=CÔNG TY TNHH THƯƠNG MẠI HOÀNG LÊ, S=Hà Nội, C=VN\",\"SerialNumber\":\"54010E00594769B0A783A18B9442AB95\",\"Issuer\":\"CN=NC-CA SHA256, O=CÔNG TY CỔ PHẦN CÔNG NGHỆ NCCA, C=VN\",\"NotAfter\":\"2028-07-06T09:35:29\",\"NotBefore\":\"2025-07-07T09:35:29\",\"SigningTime\":\"2026-07-21T14:20:50\"}",
+    "nmsdthoai": "0912255899",
+    "nmdctdtu": null,
+    "nmcmnd": null,
+    "nmcks": null,
+    "bhphap": 0,
+    "hddunlap": null,
+    "gchdgoc": null,
+    "tbhgtngay": null,
+    "bhpldo": null,
+    "bhpcbo": null,
+    "bhpngay": null,
+    "tdlhdgoc": null,
+    "tgtphi": null,
+    "unhiem": null,
+    "mstdvnunlhdon": null,
+    "tdvnunlhdon": null,
+    "nbmdvqhnsach": null,
+    "nbsqdinh": null,
+    "nbncqdinh": null,
+    "nbcqcqdinh": null,
+    "nbhtban": null,
+    "nmmdvqhnsach": null,
+    "nmddvchden": null,
+    "nmtgvchdtu": null,
+    "nmtgvchdden": null,
+    "nbtnban": null,
+    "dcdvnunlhdon": null,
+    "dksbke": null,
+    "dknlbke": null,
+    "thtttoan": "CK",
+    "msttcgp": "0100727825",
+    "cqtcks": "{\"Subject\":\"CN=CỤC THUẾ,O=BỘ TÀI CHÍNH,L=Hà Nội,C=VN\",\"SerialNumber\":\"2A05F812673607B0\",\"Issuer\":\"CN=CA phục vụ các cơ quan Nhà nước G2, O=Ban Cơ yếu Chính phủ, C=VN\",\"NotAfter\":\"2030-03-12T16:36:53\",\"NotBefore\":\"2025-03-13T16:36:53\",\"SigningTime\":\"2026-07-21T14:21:42\"}",
+    "gchu": "",
+    "kqcht": null,
+    "hdntgia": null,
+    "tgtkcthue": null,
+    "tgtkhac": null,
+    "nmshchieu": null,
+    "nmnchchieu": null,
+    "nmnhhhchieu": null,
+    "nmqtich": null,
+    "ktkhthue": null,
+    "nmstttoan": null,
+    "nmttttoan": null,
+    "hdhhdvu": [
+        {
+            "idhdon": "27a1ecc8-f43e-4b60-9ce7-8ba5f2af85ee",
+            "id": "d90f1937-9adc-4ef7-8680-cc43f2ddaa87",
+            "dgia": 500000,
+            "dvtinh": "Kg",
+            "ltsuat": "KKKNT",
+            "sluong": 9.26,
+            "stbchu": null,
+            "stckhau": 0,
+            "stt": 1,
+            "tchat": 1,
+            "ten": "Cá Hồi Phi lê",
+            "thtcthue": null,
+            "thtien": 4630000,
+            "tlckhau": 0,
+            "tsuat": 0,
+            "tthue": null,
+            "sxep": 1,
+            "ttkhac": [
+                {
+                    "ttruong": "ExternalValue",
+                    "kdlieu": "string",
+                    "dlieu": "1$1$0$-2$0"
+                },
+                {
+                    "ttruong": "NumberExternal1",
+                    "kdlieu": "numeric",
+                    "dlieu": "0"
+                },
+                {
+                    "ttruong": "NumberExternal2",
+                    "kdlieu": "numeric",
+                    "dlieu": "0"
+                },
+                {
+                    "ttruong": "NumberExternal3",
+                    "kdlieu": "numeric",
+                    "dlieu": "0"
+                }
+            ],
+            "dvtte": null,
+            "tgia": null,
+            "tthhdtrung": []
+        }
+    ],
+    "qrcode": "00020101021202000400260052005300540058005900600062009967000001100100235654020110306C26TAA04059704705082026072106094630000.0",
+    "ttmstten": null,
+    "ladhddtten": null,
+    "hdxkhau": null,
+    "hdxkptquan": null,
+    "hdgktkhthue": null,
+    "hdonLquans": null,
+    "tthdclquan": false,
+    "pdndungs": null,
+    "hdtbssrses": null,
+    "hdTrung": null,
+    "isHDTrung": null,
+    "hdcttchinh": 0,
+    "dlhquan": null,
+    "dlnhtmai": null,
+    "bltphi": null,
+    "tcsvhdChinh": null
+}

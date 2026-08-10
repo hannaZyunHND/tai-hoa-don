@@ -1,0 +1,54 @@
+{
+  "manifest_version": 3,
+  "name": "Tải Hóa Đơn Điện Tử GDT",
+  "version": "1.0.0",
+  "description": "Bắt Bearer token từ cổng GDT và tải hoá đơn mua vào theo năm/tháng (PDF zip).",
+  "permissions": [
+    "storage",
+    "downloads",
+    "webRequest",
+    "offscreen",
+    "alarms",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://hoadondientu.gdt.gov.vn/*"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_title": "Tải hoá đơn GDT",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "48": "icons/icon-48.png",
+      "128": "icons/icon-128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon-16.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://hoadondientu.gdt.gov.vn/*"],
+      "js": ["page-hook.js"],
+      "run_at": "document_start",
+      "world": "MAIN"
+    },
+    {
+      "matches": ["https://hoadondientu.gdt.gov.vn/*"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["assets/*", "lib/*"],
+      "matches": ["https://hoadondientu.gdt.gov.vn/*"]
+    }
+  ]
+}

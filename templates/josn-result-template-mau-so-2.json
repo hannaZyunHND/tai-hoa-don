@@ -1,0 +1,289 @@
+{
+    "nbmst": "037073000420",
+    "khmshdon": 2,
+    "khhdon": "C26TVG",
+    "shdon": 163,
+    "cqt": "3706",
+    "cttkhac": [],
+    "dvtte": "VND",
+    "hdon": "02",
+    "hsgcma": "87615968-1056-4447-b047-8deeee553318",
+    "hsgoc": "479dc12c-176e-49d8-8231-19c2e57ea779",
+    "hthdon": 1,
+    "htttoan": 9,
+    "id": "4ea8336b-e68f-4fa2-83de-1ed3ef5681a2",
+    "idtbao": null,
+    "khdon": null,
+    "khhdgoc": null,
+    "khmshdgoc": null,
+    "lhdgoc": null,
+    "mhdon": "008C562781423448BA898BC3575C92B4F5",
+    "mtdiep": null,
+    "mtdtchieu": "V01001091064D88AAD189374474A45461B3295EF59A",
+    "nbdchi": "Số Nhà 23, Đường Nguyễn Công Trứ, Phố Ngọc Sơn, Phường  Hoa Lư, Tỉnh Ninh Bình, Việt Nam",
+    "chma": null,
+    "chten": null,
+    "nbhdktngay": null,
+    "nbhdktso": null,
+    "nbhdso": null,
+    "nblddnbo": null,
+    "nbptvchuyen": null,
+    "nbstkhoan": null,
+    "nbten": "HỘ KINH DOANH NGUYỄN VĂN LÂM",
+    "nbtnhang": null,
+    "nbtnvchuyen": null,
+    "nbttkhac": [
+        {
+            "ttruong": "Quận, huyện người bán",
+            "kdlieu": "string",
+            "dlieu": "Hoa Lư"
+        },
+        {
+            "ttruong": "Tỉnh/Thành phố người bán",
+            "kdlieu": "string",
+            "dlieu": "Ninh Bình"
+        },
+        {
+            "ttruong": "Mã quốc gia người bán",
+            "kdlieu": "string",
+            "dlieu": "84"
+        },
+        {
+            "ttruong": "Link tra cứu người bán",
+            "kdlieu": "string",
+            "dlieu": null
+        }
+    ],
+    "ncma": "2026-07-31T08:54:33.963Z",
+    "ncnhat": "2026-07-31T08:54:33.970Z",
+    "ngcnhat": "tvan_viettel",
+    "nky": "2026-07-31T08:54:33Z",
+    "nmdchi": "Đường Vạn Hạnh, Khu Đô thị mới Ninh Khánh, Phường Hoa Lư, Ninh Bình, Việt Nam",
+    "nmmst": "2700827166",
+    "nmstkhoan": null,
+    "nmten": "CÔNG TY TNHH IQ SCHOOL",
+    "nmtnhang": null,
+    "nmtnmua": null,
+    "nmttkhac": [
+        {
+            "ttruong": "Loại giấy tờ người mua",
+            "kdlieu": "string",
+            "dlieu": null
+        },
+        {
+            "ttruong": "Số giấy tờ người mua",
+            "kdlieu": "string",
+            "dlieu": null
+        }
+    ],
+    "ntao": "2026-07-31T08:54:33.918Z",
+    "ntnhan": "2026-07-31T08:54:33.847Z",
+    "pban": "2.1.0",
+    "ptgui": 1,
+    "shdgoc": null,
+    "tchat": 1,
+    "tdlap": "2026-07-30T17:00:00Z",
+    "tgia": 1,
+    "tgtcthue": null,
+    "tgtthue": null,
+    "tgtttbchu": "Một triệu tám trăm bảy mươi tám nghìn đồng",
+    "tgtttbso": 1878000,
+    "thdon": "Hóa đơn bán hàng",
+    "thlap": 202607,
+    "thttlphi": [],
+    "thttltsuat": [],
+    "tlhdon": "Hóa đơn bán hàng",
+    "ttcktmai": 0,
+    "tthai": 1,
+    "ttkhac": [
+        {
+            "ttruong": "Trạng thái thanh toán",
+            "kdlieu": "string",
+            "dlieu": "Đã thanh toán"
+        },
+        {
+            "ttruong": "Mã số bí mật",
+            "kdlieu": "string",
+            "dlieu": "G3I1N849HJX9G9G"
+        },
+        {
+            "ttruong": "Ghi chú hóa đơn",
+            "kdlieu": "string",
+            "dlieu": null
+        }
+    ],
+    "tttbao": 1,
+    "ttttkhac": [
+        {
+            "ttruong": "Tổng tiền thuế tiêu thụ đặc biệt",
+            "kdlieu": "string",
+            "dlieu": "0"
+        },
+        {
+            "ttruong": "Tổng tiền phí",
+            "kdlieu": "string",
+            "dlieu": "0"
+        }
+    ],
+    "ttxly": 5,
+    "tvandnkntt": "0100109106",
+    "mhso": null,
+    "ladhddt": 1,
+    "mkhang": null,
+    "nbsdthoai": "0914849955",
+    "nbdctdtu": "ngocquang.nb77@gmail.com",
+    "nbfax": null,
+    "nbwebsite": null,
+    "nbcks": "{\"Subject\":\"UID=MST:8594302648-001,CN=HỘ KINH DOANH NGUYỄN VĂN LÂM,L=NINH BÌNH,C=VN\",\"SerialNumber\":\"5404FFFEB7033FB316D672201C2157CE\",\"Issuer\":\"C=VN, O=Viettel Group, CN=Viettel-CA SHA2\",\"NotAfter\":\"2028-04-11T10:41:00\",\"NotBefore\":\"2025-04-11T10:41:00\",\"SigningTime\":\"2026-07-31T15:54:33\"}",
+    "nmsdthoai": null,
+    "nmdctdtu": null,
+    "nmcmnd": null,
+    "nmcks": null,
+    "bhphap": 0,
+    "hddunlap": null,
+    "gchdgoc": null,
+    "tbhgtngay": null,
+    "bhpldo": null,
+    "bhpcbo": null,
+    "bhpngay": null,
+    "tdlhdgoc": null,
+    "tgtphi": null,
+    "unhiem": null,
+    "mstdvnunlhdon": null,
+    "tdvnunlhdon": null,
+    "nbmdvqhnsach": null,
+    "nbsqdinh": null,
+    "nbncqdinh": null,
+    "nbcqcqdinh": null,
+    "nbhtban": null,
+    "nmmdvqhnsach": null,
+    "nmddvchden": null,
+    "nmtgvchdtu": null,
+    "nmtgvchdden": null,
+    "nbtnban": null,
+    "dcdvnunlhdon": null,
+    "dksbke": null,
+    "dknlbke": null,
+    "thtttoan": "TM/CK",
+    "msttcgp": "0100109106",
+    "cqtcks": "{\"Subject\":\"CN=CỤC THUẾ,O=BỘ TÀI CHÍNH,L=Hà Nội,C=VN\",\"SerialNumber\":\"2A05F812673607B0\",\"Issuer\":\"CN=CA phục vụ các cơ quan Nhà nước G2, O=Ban Cơ yếu Chính phủ, C=VN\",\"NotAfter\":\"2030-03-12T16:36:53\",\"NotBefore\":\"2025-03-13T16:36:53\",\"SigningTime\":\"2026-07-31T15:54:33\"}",
+    "gchu": "",
+    "kqcht": null,
+    "hdntgia": null,
+    "tgtkcthue": null,
+    "tgtkhac": null,
+    "nmshchieu": null,
+    "nmnchchieu": null,
+    "nmnhhhchieu": null,
+    "nmqtich": null,
+    "ktkhthue": null,
+    "nmstttoan": null,
+    "nmttttoan": null,
+    "hdhhdvu": [
+        {
+            "idhdon": "4ea8336b-e68f-4fa2-83de-1ed3ef5681a2",
+            "id": "b650141f-0a70-4622-9d4b-5af2e4dc5c37",
+            "dgia": 12034.02,
+            "dvtinh": "Kg",
+            "ltsuat": null,
+            "sluong": 157,
+            "stbchu": null,
+            "stckhau": 0,
+            "stt": 1,
+            "tchat": 1,
+            "ten": "Bún, Phở",
+            "thtcthue": null,
+            "thtien": 1889336,
+            "tlckhau": null,
+            "tsuat": null,
+            "tthue": null,
+            "sxep": 1,
+            "ttkhac": [
+                {
+                    "ttruong": "Số lô",
+                    "kdlieu": "string",
+                    "dlieu": null
+                },
+                {
+                    "ttruong": "Hạn dùng",
+                    "kdlieu": "string",
+                    "dlieu": null
+                },
+                {
+                    "ttruong": "Ghi chú dòng",
+                    "kdlieu": "string",
+                    "dlieu": null
+                },
+                {
+                    "ttruong": "Chiết khấu lần 2",
+                    "kdlieu": "string",
+                    "dlieu": null
+                }
+            ],
+            "dvtte": null,
+            "tgia": null,
+            "tthhdtrung": []
+        },
+        {
+            "idhdon": "4ea8336b-e68f-4fa2-83de-1ed3ef5681a2",
+            "id": "77dcc89e-ffa6-494e-9d79-dc8760c1d8ef",
+            "dgia": null,
+            "dvtinh": "",
+            "ltsuat": null,
+            "sluong": null,
+            "stbchu": null,
+            "stckhau": 0,
+            "stt": null,
+            "tchat": 4,
+            "ten": "Đã giảm 11.336 đồng tương ứng 20% mức tỷ lệ % để tính thuế giá trị gia tăng theo Nghị quyết số 204/2025/QH15",
+            "thtcthue": null,
+            "thtien": null,
+            "tlckhau": null,
+            "tsuat": null,
+            "tthue": null,
+            "sxep": 2,
+            "ttkhac": [
+                {
+                    "ttruong": "Số lô",
+                    "kdlieu": "string",
+                    "dlieu": null
+                },
+                {
+                    "ttruong": "Hạn dùng",
+                    "kdlieu": "string",
+                    "dlieu": null
+                },
+                {
+                    "ttruong": "Ghi chú dòng",
+                    "kdlieu": "string",
+                    "dlieu": null
+                },
+                {
+                    "ttruong": "Chiết khấu lần 2",
+                    "kdlieu": "string",
+                    "dlieu": null
+                }
+            ],
+            "dvtte": null,
+            "tgia": null,
+            "tthhdtrung": []
+        }
+    ],
+    "qrcode": "0002010102120200040026005200530054005800590060006200996700000112037073000420020120306C26TVG040316305082026073106091878000.0",
+    "ttmstten": null,
+    "ladhddtten": null,
+    "hdxkhau": null,
+    "hdxkptquan": null,
+    "hdgktkhthue": null,
+    "hdonLquans": null,
+    "tthdclquan": false,
+    "pdndungs": null,
+    "hdtbssrses": null,
+    "hdTrung": null,
+    "isHDTrung": null,
+    "hdcttchinh": null,
+    "dlhquan": null,
+    "dlnhtmai": null,
+    "bltphi": null,
+    "tcsvhdChinh": null
+}

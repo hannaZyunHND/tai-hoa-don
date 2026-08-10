@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <title>Hóa đơn {{ khhdon }}-{{ shdon }}</title>
+  <style>
+    @page { size: A4; margin: 0; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Times New Roman", Times, "Noto Serif", serif;
+      font-size: 13px;
+      color: #000;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    .wrapper-content-vi.printSection {
+      width: 190mm;
+      min-height: 277mm;
+      margin: 0 auto;
+      padding: 16px 20px 24px;
+      background-image: url("{{ background_url }}");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 92% auto;
+      color: #000;
+    }
+    .top-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+    .qr img { width: 78px; height: 78px; display: block; }
+    .code-block {
+      text-align: right;
+      line-height: 1.55;
+      padding-top: 2px;
+      font-size: 13px;
+    }
+    .code-ms { display: block; font-weight: 700; }
+    .title-heading { text-align: center; margin: 2px 0 6px; }
+    .main-title {
+      margin: 0;
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: 0.4px;
+      text-transform: uppercase;
+    }
+    .day {
+      margin: 6px 0 0;
+      font-size: 13px;
+    }
+    .mccqt {
+      text-align: center;
+      margin: 4px 0 12px;
+      font-size: 13px;
+      word-break: break-all;
+    }
+    .section { margin: 0 0 2px; }
+    .field {
+      display: flex;
+      gap: 6px;
+      line-height: 1.55;
+      margin: 0;
+    }
+    .field .label {
+      flex: 0 0 168px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+    .field .value { flex: 1; min-width: 0; }
+    .field-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0 18px;
+    }
+    .divider {
+      border: 0;
+      border-top: 1px solid #222;
+      margin: 8px 0;
+    }
+    table.res-tb {
+      width: 100%;
+      border-collapse: collapse;
+      table-layout: fixed;
+      margin-top: 4px;
+      font-size: 12px;
+    }
+    table.res-tb th,
+    table.res-tb td {
+      border: 1px solid #222;
+      padding: 5px 4px;
+      vertical-align: middle;
+      word-wrap: break-word;
+    }
+    table.res-tb th {
+      font-weight: 700;
+      text-align: center;
+      background: transparent;
+    }
+    .tx-center { text-align: center; }
+    .tx-right { text-align: right; }
+    .tx-left { text-align: left; }
+    .totals-wrap {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: -1px;
+    }
+    table.totals {
+      width: 72%;
+      border-collapse: collapse;
+      font-size: 12.5px;
+    }
+    table.totals td {
+      border: 1px solid #222;
+      padding: 5px 8px;
+      vertical-align: middle;
+    }
+    table.totals td.lbl { width: 62%; }
+    table.totals td.val { text-align: right; }
+    table.totals td.val-left { text-align: left; }
+    .sign-area {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin-top: 28px;
+      text-align: center;
+    }
+    .sign-title {
+      margin: 0;
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    .sign-sub {
+      margin: 2px 0 0;
+      font-style: italic;
+      font-size: 12px;
+      font-weight: 400;
+    }
+    .sign-box {
+      display: inline-block;
+      margin-top: 18px;
+      padding: 8px 12px;
+      border: 2px solid #1f8f3a;
+      border-radius: 2px;
+      text-align: left;
+      min-width: 210px;
+      background: rgba(255, 255, 255, 0.72);
+    }
+    .sign-box .ok {
+      display: block;
+      color: #1f8f3a;
+      font-weight: 700;
+      font-size: 13px;
+      margin-bottom: 4px;
+    }
+    .sign-box .ok::before {
+      content: "✓ ";
+      font-weight: 700;
+    }
+    .sign-box .meta {
+      display: block;
+      color: #111;
+      font-size: 11.5px;
+      line-height: 1.35;
+    }
+    .fd-end {
+      margin-top: 18px;
+      text-align: center;
+      font-style: italic;
+      font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper-content-vi printSection">
+    <div class="top-content">
+      <div class="qr">
+        {% if qr_data_uri %}
+        <img src="{{ qr_data_uri }}" alt="QR" />
+        {% endif %}
+      </div>
+      <div class="code-block">
+        <b class="code-ms">Mẫu số {{ khmshdon }}</b>
+        <b class="code-ms">Ký hiệu: {{ khhdon }}</b>
+        <b class="code-ms">Số: {{ shdon }}</b>
+      </div>
+    </div>
+
+    <div class="title-heading">
+      <h2 class="main-title">{{ title }}</h2>
+      <p class="day">Ngày {{ day }} tháng {{ month }} năm {{ year }}</p>
+    </div>
+    {% if mhdon %}
+    <div class="mccqt">MCCQT: {{ mhdon }}</div>
+    {% endif %}
+
+    <div class="section">
+      <p class="field"><span class="label">Tên người bán:</span><span class="value">{{ nbten }}</span></p>
+      <p class="field"><span class="label">Mã số thuế:</span><span class="value">{{ nbmst }}</span></p>
+      <p class="field"><span class="label">Mã cửa hàng:</span><span class="value">{{ chma }}</span></p>
+      <p class="field"><span class="label">Tên cửa hàng:</span><span class="value">{{ chten }}</span></p>
+      <p class="field"><span class="label">Địa chỉ:</span><span class="value">{{ nbdchi }}</span></p>
+      <p class="field"><span class="label">Điện thoại:</span><span class="value">{{ nbsdthoai }}</span></p>
+      <p class="field">
+        <span class="label">Số tài khoản:</span>
+        <span class="value">{% if nbstkhoan %}{{ nbstkhoan }}{% endif %}{% if nbtnhang %}&nbsp;&nbsp;&nbsp;{{ nbtnhang }}{% endif %}</span>
+      </p>
+    </div>
+
+    <hr class="divider" />
+
+    <div class="section">
+      <p class="field"><span class="label">Tên người mua:</span><span class="value">{{ nmten }}</span></p>
+      <p class="field"><span class="label">Họ tên người mua hàng:</span><span class="value">{{ nmtnmua }}</span></p>
+      <p class="field"><span class="label">Mã số thuế:</span><span class="value">{{ nmmst }}</span></p>
+      <p class="field"><span class="label">Mã ĐVCQHVNSNN:</span><span class="value">{{ nmmdvqhnsach }}</span></p>
+      <p class="field"><span class="label">CCCD người mua:</span><span class="value">{{ nmcmnd }}</span></p>
+      <p class="field"><span class="label">Số hộ chiếu:</span><span class="value">{{ nmshchieu }}</span></p>
+      <p class="field"><span class="label">Địa chỉ:</span><span class="value">{{ nmdchi }}</span></p>
+      <p class="field">
+        <span class="label">Số tài khoản:</span>
+        <span class="value">{% if nmstkhoan %}{{ nmstkhoan }}{% endif %}{% if nmtnhang %}&nbsp;&nbsp;&nbsp;{{ nmtnhang }}{% endif %}</span>
+      </p>
+      <div class="field-row">
+        <p class="field"><span class="label">Hình thức thanh toán:</span><span class="value">{{ thtttoan }}</span></p>
+        <p class="field"><span class="label">Đơn vị tiền tệ:</span><span class="value">{{ dvtte }}</span></p>
+      </div>
+      <div class="field-row">
+        <p class="field"><span class="label">Số bảng kê:</span><span class="value">{{ dksbke }}</span></p>
+        <p class="field"><span class="label">Ngày bảng kê:</span><span class="value">{{ dknlbke }}</span></p>
+      </div>
+    </div>
+
+    <hr class="divider" />
+
+    <table class="res-tb">
+      <thead>
+        <tr>
+          <th style="width:4%">STT</th>
+          <th style="width:11%">Tính chất</th>
+          <th style="width:10%">Loại hàng hoá đặc trưng</th>
+          <th style="width:{{ '28%' if is_gtgt else '33%' }}">Tên hàng hóa, dịch vụ</th>
+          <th style="width:7%">Đơn vị tính</th>
+          <th style="width:8%">Số lượng</th>
+          <th style="width:10%">Đơn giá</th>
+          <th style="width:8%">Chiết khấu</th>
+          {% if is_gtgt %}
+          <th style="width:8%">Thuế suất</th>
+          <th style="width:12%">Thành tiền chưa có thuế GTGT</th>
+          {% else %}
+          <th style="width:11%">Thành tiền</th>
+          {% endif %}
+        </tr>
+      </thead>
+      <tbody>
+        {% for line in lines %}
+        <tr>
+          <td class="tx-center">{{ line.stt }}</td>
+          <td class="tx-left">{{ line.tchat }}</td>
+          <td class="tx-left">{{ line.lhhdac }}</td>
+          <td class="tx-left">{{ line.ten }}</td>
+          <td class="tx-center">{{ line.dvtinh }}</td>
+          <td class="tx-right">{{ line.sluong }}</td>
+          <td class="tx-right">{{ line.dgia }}</td>
+          <td class="tx-right">{{ line.stckhau }}</td>
+          {% if is_gtgt %}
+          <td class="tx-center">{{ line.tsuat }}</td>
+          <td class="tx-right">{{ line.thtien }}</td>
+          {% else %}
+          <td class="tx-right">{{ line.thtien }}</td>
+          {% endif %}
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
+    {% if is_gtgt and tax_rows %}
+    <table class="res-tb" style="margin-top:-1px">
+      <thead>
+        <tr>
+          <th>Thuế suất</th>
+          <th>Tổng tiền chưa thuế</th>
+          <th>Tổng tiền thuế</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for row in tax_rows %}
+        <tr>
+          <td class="tx-center">{{ row.tsuat }}</td>
+          <td class="tx-right">{{ row.thtien }}</td>
+          <td class="tx-right">{{ row.tthue }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    {% endif %}
+
+    <div class="totals-wrap">
+      <table class="totals">
+        {% if is_gtgt %}
+        <tr>
+          <td class="lbl">Tổng tiền chưa thuế<br/>(Tổng cộng thành tiền chưa có thuế)</td>
+          <td class="val">{{ tgtcthue }}</td>
+        </tr>
+        <tr>
+          <td class="lbl">Tổng tiền thuế (Tổng cộng tiền thuế)</td>
+          <td class="val">{{ tgtthue }}</td>
+        </tr>
+        {% endif %}
+        <tr>
+          <td class="lbl">Tổng tiền phí</td>
+          <td class="val">{{ tgtphi }}</td>
+        </tr>
+        <tr>
+          <td class="lbl">Tổng tiền chiết khấu thương mại</td>
+          <td class="val">{{ ttcktmai if ttcktmai != '' else '0' }}</td>
+        </tr>
+        <tr>
+          <td class="lbl">Tổng tiền thanh toán bằng số</td>
+          <td class="val"><b>{{ tgtttbso }}</b></td>
+        </tr>
+        <tr>
+          <td class="lbl">Tổng tiền thanh toán bằng chữ</td>
+          <td class="val-left">{{ tgtttbchu }}</td>
+        </tr>
+        <tr>
+          <td class="lbl">Ghi chú</td>
+          <td class="val-left">{{ gchu }}</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="sign-area">
+      <div>
+        <p class="sign-title">NGƯỜI MUA HÀNG</p>
+        <p class="sign-sub">(Chữ ký số (nếu có))</p>
+      </div>
+      <div>
+        <p class="sign-title">NGƯỜI BÁN HÀNG</p>
+        <p class="sign-sub">(Chữ ký điện tử, chữ ký số)</p>
+        {% if nbcks %}
+        <div class="sign-box">
+          <span class="ok">Signature Valid</span>
+          <span class="meta">Ký bởi {{ nbcks_name }}</span>
+          <span class="meta">Ký ngày: {{ nbcks_time }}</span>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+
+    <div class="fd-end"><i>(Cần kiểm tra, đối chiếu khi lập, nhận hóa đơn)</i></div>
+  </div>
+</body>
+</html>
